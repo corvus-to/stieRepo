@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPhone Store</title>
+  <script src="https://kit.fontawesome.com/e93a05f8dc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+  <header>
+    <div class="main-header">
+      <div class="logo">
+        <img class="logoImg" src="mobile-button-solid.svg" alt="logo">
+        <h1>IPhone Store</h1>
+      </div>
+      <form class="search-form" action="#">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for iphone..." class="search-input">
+          <button type="submit" id="searchButton" class="search-button" onclick="searchForProduct()">Search</button>
+          <ul id="searchResults" class="search-results"></ul>
+        </div>
+      </form>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <a class="header-link" href="#" onclick="window.location.reload();">
+          <li class="header-items">Home</li>
+        </a>
+        <a class="header-link" href="#" onclick="window.location.reload();">
+          <li class="header-items">Products</li>
+        </a>
+        <a class="header-link" href="#">
+          <li class="header-items">Contact</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <section class="mainText">
+    <h2>Welcome to IPhone Store</h2>
+    <p>Discover amazing products with new features</p>
+  </section>
+  <div class="slider-container" id="sliderContainer">
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="mainJS.js"></script>
+</body>
+
+</html>
