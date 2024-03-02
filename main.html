@@ -16,27 +16,14 @@
         <img class="logoImg" src="mobile-button-solid.svg" alt="logo">
         <h1>IPhone Store</h1>
       </div>
-      <form class="search-form" action="#">
-        <div class="search-container">
+      <form class="search-form" id="searchForm" action="#">
+        <div class="search-container" id="searchContainer">
           <input type="text" id="searchInput" placeholder="Search for iphone..." class="search-input">
           <button type="submit" id="searchButton" class="search-button" onclick="searchForProduct()">Search</button>
           <ul id="searchResults" class="search-results"></ul>
         </div>
       </form>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <a class="header-link" href="#" onclick="window.location.reload();">
-          <li class="header-items">Home</li>
-        </a>
-        <a class="header-link" href="#" onclick="window.location.reload();">
-          <li class="header-items">Products</li>
-        </a>
-        <a class="header-link" href="#">
-          <li class="header-items">Contact</li>
-        </a>
-      </ul>
-    </nav>
   </header>
   <section class="mainText">
     <h2>Welcome to IPhone Store</h2>

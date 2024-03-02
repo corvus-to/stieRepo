@@ -205,3 +205,55 @@ function showSelectedSlide(product) {
   sliderContainer.innerHTML = '';
   sliderContainer.appendChild(createSlide(product));
 }
+
+if (window.innerWidth <= 768) {
+  const newElement = document.createElement('nav');
+  newElement.classList.add("navbar");
+  newElement.innerHTML = `
+  <button class="hamburger-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="snav-links">
+    <li><a href="#" onclick="window.location.reload();">Home</a></li>
+    <li><a href="#" onclick="window.location.reload();">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>`;
+
+  // Get the header element
+  const headerElement = document.querySelector('header');
+
+  // Append the new element to the header
+  headerElement.appendChild(newElement);
+} else {
+  const newElement = document.createElement('nav');
+  newElement.innerHTML = `<ul class="nav-links">
+        <a class="header-link" href="#" onclick="window.location.reload();">
+          <li class="header-items">Home</li>
+        </a>
+        <a class="header-link" href="#" onclick="window.location.reload();">
+          <li class="header-items">Products</li>
+        </a>
+        <a class="header-link" href="#">
+          <li class="header-items">Contact</li>
+        </a>
+      </ul>`;
+
+  // Get the header element
+  const headerElement = document.querySelector('header');
+
+  // Append the new element to the header
+  headerElement.appendChild(newElement);
+}
+
+const btn = document.querySelector('.hamburger-btn');
+const links = document.querySelector('.snav-links');
+
+btn.addEventListener('click', () => {
+  if (links.style.display === 'block') {
+    links.style.display = 'none';
+  } else {
+    links.style.display = 'block';
+  }
+});

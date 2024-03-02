@@ -24,7 +24,51 @@ header {
   color: #fff;
 }
 
+/*-----------------------------------*/
+.navbar {
+  position: relative;
+}
 
+
+.snav-links {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  flex-direction: row;
+  font-size: large;
+  font-weight: bold;
+}
+
+.snav-links li {
+  margin: 8px 0;
+}
+
+.snav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-btn {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.hamburger-btn span {
+  display: flex;
+  height: 4px;
+  width: 24px;
+  margin: 4px auto;
+  background-color: white;
+  transition: transform .3s ease;
+}
+
+/*----------------------------------*/
 .logo {
   font-size: 1.4rem;
   display: flex;
@@ -77,7 +121,7 @@ header {
 
 .search-form {
   flex-basis: 510px;
-  max-width: 42%;
+  max-width: 43%;
 }
 
 .search-input {
@@ -91,6 +135,8 @@ header {
 }
 
 .search-button {
+  display: flex;
+  justify-content: center;
   padding: 10px 20px;
   border: none;
   background-color: #ff5733;
@@ -98,6 +144,7 @@ header {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   min-width: 70px;
+  font-weight: bold;
 }
 
 .search-button:hover {
@@ -185,7 +232,7 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 84%;
+  width: 83.6%;
   min-width: 260px;
   color: #000;
   background-color: #dbdada;
@@ -223,10 +270,12 @@ header {
 
 .product-name {
   grid-area: name;
+  margin-left: 2px;
 }
 
 .product-price {
   grid-area: price;
+  margin-left: 2px;
 }
 
 .tooltip {
